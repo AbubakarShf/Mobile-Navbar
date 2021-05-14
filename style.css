@@ -1,0 +1,102 @@
+body {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: crimson;
+}
+
+#hamburgerMenu {
+  cursor: pointer;
+  fill: white;
+}
+
+#burgerDiv {
+  margin-left: 4rem;
+  margin-top: 4rem;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+
+#navbar {
+  margin-top: -2.7rem;
+  margin-left: 4.3rem;
+  display: none;
+}
+
+#navbar ul {
+  padding: 10px 8px 10px 48px;
+}
+
+#navbar ul li:hover {
+  background-color: crimson;
+  border-radius: 8px;
+}
+
+#navbar ul {
+  -webkit-animation: FadeIn 0.8s;
+          animation: FadeIn 0.8s;
+  background-color: yellowgreen;
+  border: 1px solid black;
+  border-radius: 10px;
+  list-style: none;
+}
+
+#navbar ul > li {
+  margin: 10px 20px 10px 20px;
+  padding: 5px 20px 5px 20px;
+  margin-left: -2.5rem;
+}
+
+#navbar ul > li > ul {
+  margin-left: 1.7rem;
+  position: absolute;
+  display: inline-block;
+}
+
+#navbar #Deep0-ul {
+  display: inline-block;
+  margin-top: 2px;
+}
+
+#navbar #Deep0-ul .Deep0-li #Deep1-ul {
+  display: none;
+}
+
+#navbar #Deep0-ul .Deep0-li:hover #Deep1-ul {
+  margin-left: 1rem;
+  display: initial;
+}
+
+#navbar #Deep0-ul .Deep0-li:hover #Deep1-ul .Deep1-li .Deep2-ul {
+  display: none;
+}
+
+#navbar #Deep0-ul .Deep0-li:hover #Deep1-ul .Deep1-li:hover .Deep2-ul {
+  margin-left: 1rem;
+  display: initial;
+}
+
+@-webkit-keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

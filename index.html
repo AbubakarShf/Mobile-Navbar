@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="burgerDiv" onclick="NavFunc()">
+        <svg id="hamburgerMenu" viewBox="0 0 100 80" width="40" height="40">
+            <rect class="svg" width="80" height="9" rx="8"></rect>
+            <rect class="svg" y="23" width="80" height="9" rx="8"></rect>
+            <rect class="svg" y="45" width="80" height="9" rx="8"></rect>
+        </svg>
+    </div>
+    <nav id="navbar" onmouseleave="RmvNav(this)">
+        <ul id="Deep0-ul">
+            <li class="Deep0-li">
+                <a href="#">Menu1</a>
+            </li>
+            <li class="Deep0-li">
+                <a href="#">Menu2</a>
+            </li>
+            <li class="Deep0-li">
+                <a href="#">Menu3</a>
+                <ul id="Deep1-ul">
+                    <li class="Deep1-li"><a href="#" target="_blank" rel="noopener noreferrer">SubMenu1</a></li>
+                    <li class="Deep1-li"><a href="#">SubMenu2</a></li>
+                    <li class="Deep1-li"><a href="#">SubMenu3</a>
+                        <ul class="Deep2-ul">
+                            <li class="Deep2-li">
+                                <a href="#">SubSubMenu1</a>
+                            </li>
+                            <li class="Deep2-li"><a href="#">SubSubMenu1</a></li>
+                            <li class="Deep2-li"><a href="#">SubSubMenu2</a></li>
+                            <li class="Deep2-li"><a href="#">SubSubMenu3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="Deep0-li">
+                <a href="#">Menu4</a>
+            </li>
+            <li class="Deep0-li">
+                <a href="#">Menu5</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+<script>
+    const NavFunc = () => {
+        document.getElementById("navbar").style.display = "initial";
+    }
+    const RmvNav = (ele) => {
+        ele.style.display = 'none';
+    }
+</script>
+
+</html>
